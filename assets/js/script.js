@@ -280,3 +280,4 @@ var saveTasks = function() {
   pageContentEl.addEventListener("drop", dropTaskHandler);
   pageContentEl.addEventListener("dragleave", dragLeaveHandler);
   
+  
