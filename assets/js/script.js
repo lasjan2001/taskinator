@@ -33,8 +33,6 @@ var taskFormHandler = function(event) {
             name: taskNameInput,
             type: taskTypeInput,
             status: "to do"
-          
-      
     };
   
     createTaskEl(taskDataObj);
@@ -71,6 +69,7 @@ var createTaskEl = function(taskDataObj) {
 var createTaskActions = function(taskId) {
       var actionContainerEl = document.createElement("div");
       actionContainerEl.className = "task-actions";
+
       // create edit button
       var editButtonEl = document.createElement("button");
       editButtonEl.textContent = "Edit";
@@ -272,12 +271,12 @@ var saveTasks = function() {
     createTaskEl(savedTasks[i]);
   }
   };
-  //Other Logic
+
+// Events
   pageContentEl.addEventListener("click", taskButtonHandler);
   pageContentEl.addEventListener("change", taskStatusChangeHandler);
   pageContentEl.addEventListener("dragstart", dragTaskHandler);
   pageContentEl.addEventListener("dragover", dropZoneDragHandler);
   pageContentEl.addEventListener("drop", dropTaskHandler);
   pageContentEl.addEventListener("dragleave", dragLeaveHandler);
-  
   
