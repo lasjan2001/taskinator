@@ -271,14 +271,10 @@ var saveTasks = function() {
     createTaskEl(savedTasks[i]);
   }
   };
-
 // Events
   pageContentEl.addEventListener("click", taskButtonHandler);
   pageContentEl.addEventListener("change", taskStatusChangeHandler);
   pageContentEl.addEventListener("dragstart", dragTaskHandler);
   pageContentEl.addEventListener("dragover", dropZoneDragHandler);
   pageContentEl.addEventListener("drop", dropTaskHandler);
-  pageContentEl.addEventListener("dragleave", dragLeaveHandler);
-
-  
-  
+  pageContentEl.addEventListener("dragleave", dragLeaveHandler);  
