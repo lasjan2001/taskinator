@@ -102,7 +102,7 @@ var createTaskActions = function(taskId) {
         // append to select
         statusSelectEl.appendChild(statusOptionEl);
       }
-
+      
       actionContainerEl.appendChild(statusSelectEl);
 
       return actionContainerEl;
@@ -278,3 +278,4 @@ var saveTasks = function() {
   pageContentEl.addEventListener("dragover", dropZoneDragHandler);
   pageContentEl.addEventListener("drop", dropTaskHandler);
   pageContentEl.addEventListener("dragleave", dragLeaveHandler);  
+
